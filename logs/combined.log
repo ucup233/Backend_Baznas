@@ -2,3 +2,213 @@
 {"level":"info","message":"[SERVER] Running on port 5501 in development mode.","timestamp":"2026-03-09 11:33:16"}
 {"level":"error","message":"[FATAL] Could not connect to the database: connect ETIMEDOUT","stack":"SequelizeConnectionError: connect ETIMEDOUT\n    at ConnectionManager.connect (/Users/yusuf/Documents/Backend/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async ConnectionManager._connect (/Users/yusuf/Documents/Backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)\n    at async /Users/yusuf/Documents/Backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32\n    at async ConnectionManager.getConnection (/Users/yusuf/Documents/Backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)\n    at async /Users/yusuf/Documents/Backend/node_modules/sequelize/lib/sequelize.js:305:26\n    at async Sequelize.authenticate (/Users/yusuf/Documents/Backend/node_modules/sequelize/lib/sequelize.js:457:5)\n    at async file:///Users/yusuf/Documents/Backend/app.js:154:5","timestamp":"2026-03-09 11:59:22"}
 {"level":"error","message":"[FATAL] Could not connect to the database: connect ETIMEDOUT","stack":"SequelizeConnectionError: connect ETIMEDOUT\n    at ConnectionManager.connect (/Users/yusuf/Documents/Backend/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async ConnectionManager._connect (/Users/yusuf/Documents/Backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)\n    at async /Users/yusuf/Documents/Backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32\n    at async ConnectionManager.getConnection (/Users/yusuf/Documents/Backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)\n    at async /Users/yusuf/Documents/Backend/node_modules/sequelize/lib/sequelize.js:305:26\n    at async Sequelize.authenticate (/Users/yusuf/Documents/Backend/node_modules/sequelize/lib/sequelize.js:457:5)\n    at async file:///Users/yusuf/Documents/Backend/app.js:154:5","timestamp":"2026-03-09 12:01:06"}
+{"level":"info","message":"[DB] Database connected.","timestamp":"2026-03-09 14:49:45"}
+{"level":"info","message":"[SERVER] Running on port 5501 in development mode.","timestamp":"2026-03-09 14:49:45"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[32m200\u001b[0m 1429.605 ms - 186\u001b[0m","timestamp":"2026-03-09 14:51:05"}
+{"level":"http","message":"\u001b[0mGET /api/dashboard?tahun=2026 \u001b[32m200\u001b[0m 1808.199 ms - 456\u001b[0m","timestamp":"2026-03-09 14:51:06"}
+{"level":"http","message":"\u001b[0mGET /api/dashboard?tahun=2026 \u001b[36m304\u001b[0m 584.167 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:06"}
+{"level":"http","message":"\u001b[0mGET /api/dashboard?tahun=2026 \u001b[36m304\u001b[0m 622.527 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:07"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kelurahan \u001b[32m200\u001b[0m 536.490 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:09"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[32m200\u001b[0m 698.926 ms - 419\u001b[0m","timestamp":"2026-03-09 14:51:09"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[32m200\u001b[0m 702.116 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:09"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-upz \u001b[32m200\u001b[0m 869.759 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:09"}
+{"level":"http","message":"\u001b[0mGET /api/muzakki?page=1&limit=10 \u001b[32m200\u001b[0m 1064.318 ms - 713\u001b[0m","timestamp":"2026-03-09 14:51:10"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kelurahan \u001b[36m304\u001b[0m 696.713 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:10"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 549.114 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:10"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 714.784 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:10"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-upz \u001b[36m304\u001b[0m 546.560 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:10"}
+{"level":"http","message":"\u001b[0mGET /api/muzakki?page=1&limit=10 \u001b[36m304\u001b[0m 356.032 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:10"}
+{"level":"http","message":"\u001b[0mGET /api/ref/asnaf \u001b[32m200\u001b[0m 358.913 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:15"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[32m200\u001b[0m 406.106 ms - 426\u001b[0m","timestamp":"2026-03-09 14:51:15"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kelurahan \u001b[36m304\u001b[0m 409.433 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:15"}
+{"level":"http","message":"\u001b[0mGET /api/mustahiq?page=1&limit=10 \u001b[32m200\u001b[0m 406.987 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:15"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 560.221 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:15"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 407.816 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:15"}
+{"level":"http","message":"\u001b[0mGET /api/ref/asnaf \u001b[36m304\u001b[0m 461.247 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:15"}
+{"level":"http","message":"\u001b[0mGET /api/mustahiq?page=1&limit=10 \u001b[36m304\u001b[0m 407.228 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:15"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kelurahan \u001b[36m304\u001b[0m 524.573 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:15"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 453.058 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:15"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 366.920 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:16"}
+{"level":"http","message":"\u001b[0mGET /api/dashboard?tahun=2026 \u001b[36m304\u001b[0m 545.102 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:17"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[32m200\u001b[0m 722.933 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:17"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 351.938 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:17"}
+{"level":"http","message":"\u001b[0mGET /api/dashboard?tahun=2026 \u001b[36m304\u001b[0m 563.468 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:17"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 726.473 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:18"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 722.603 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:18"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi/4 \u001b[32m200\u001b[0m 419.519 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:19"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 812.436 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:19"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 207.729 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:22"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi/4 \u001b[36m304\u001b[0m 486.550 ms - -\u001b[0m","timestamp":"2026-03-09 14:51:23"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi/4/daily-seq \u001b[32m200\u001b[0m 525.243 ms - 24\u001b[0m","timestamp":"2026-03-09 14:51:23"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 1639.708 ms - -\u001b[0m","timestamp":"2026-03-09 14:52:43"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 354.321 ms - -\u001b[0m","timestamp":"2026-03-09 14:52:43"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[32m200\u001b[0m 2061.963 ms - 906\u001b[0m","timestamp":"2026-03-09 14:52:43"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 884.556 ms - -\u001b[0m","timestamp":"2026-03-09 14:52:44"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[32m200\u001b[0m 380.657 ms - -\u001b[0m","timestamp":"2026-03-09 14:52:44"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 928.976 ms - -\u001b[0m","timestamp":"2026-03-09 14:52:45"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 882.255 ms - -\u001b[0m","timestamp":"2026-03-09 14:52:46"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 214.805 ms - -\u001b[0m","timestamp":"2026-03-09 14:52:47"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 396.627 ms - -\u001b[0m","timestamp":"2026-03-09 14:52:47"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[32m200\u001b[0m 575.425 ms - 24\u001b[0m","timestamp":"2026-03-09 14:52:48"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[0m-\u001b[0m - ms - -\u001b[0m","timestamp":"2026-03-09 15:00:17"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[0m-\u001b[0m - ms - -\u001b[0m","timestamp":"2026-03-09 15:00:17"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[32m200\u001b[0m 4645.425 ms - 186\u001b[0m","timestamp":"2026-03-09 15:00:25"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[32m200\u001b[0m 6324.922 ms - -\u001b[0m","timestamp":"2026-03-09 15:00:27"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 3198.711 ms - -\u001b[0m","timestamp":"2026-03-09 15:00:30"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 5739.138 ms - -\u001b[0m","timestamp":"2026-03-09 15:00:50"}
+{"level":"http","message":"\u001b[0mGET /api/dashboard?tahun=2026 \u001b[36m304\u001b[0m 6167.639 ms - -\u001b[0m","timestamp":"2026-03-09 15:00:51"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 6322.320 ms - -\u001b[0m","timestamp":"2026-03-09 15:00:51"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 1223.422 ms - -\u001b[0m","timestamp":"2026-03-09 15:00:52"}
+{"level":"http","message":"\u001b[0mGET /api/dashboard?tahun=2026 \u001b[36m304\u001b[0m 1754.820 ms - -\u001b[0m","timestamp":"2026-03-09 15:00:53"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 3052.732 ms - -\u001b[0m","timestamp":"2026-03-09 15:00:54"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 2761.766 ms - -\u001b[0m","timestamp":"2026-03-09 15:00:57"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi/4 \u001b[36m304\u001b[0m 9551.931 ms - -\u001b[0m","timestamp":"2026-03-09 15:01:06"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 9743.840 ms - -\u001b[0m","timestamp":"2026-03-09 15:01:07"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 3172.992 ms - -\u001b[0m","timestamp":"2026-03-09 15:01:15"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi/4 \u001b[36m304\u001b[0m 6037.134 ms - -\u001b[0m","timestamp":"2026-03-09 15:01:17"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi/4/daily-seq \u001b[36m304\u001b[0m 1334.670 ms - -\u001b[0m","timestamp":"2026-03-09 15:01:19"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 4625.824 ms - -\u001b[0m","timestamp":"2026-03-09 15:01:45"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi/4 \u001b[36m304\u001b[0m 5488.318 ms - -\u001b[0m","timestamp":"2026-03-09 15:01:46"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi/4/daily-seq \u001b[36m304\u001b[0m 4850.354 ms - -\u001b[0m","timestamp":"2026-03-09 15:01:50"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 2476.384 ms - -\u001b[0m","timestamp":"2026-03-09 15:02:50"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 412.491 ms - -\u001b[0m","timestamp":"2026-03-09 15:02:51"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 2954.362 ms - -\u001b[0m","timestamp":"2026-03-09 15:02:51"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 1180.821 ms - -\u001b[0m","timestamp":"2026-03-09 15:02:52"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 1110.468 ms - -\u001b[0m","timestamp":"2026-03-09 15:02:53"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 447.459 ms - -\u001b[0m","timestamp":"2026-03-09 15:02:54"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 1078.494 ms - -\u001b[0m","timestamp":"2026-03-09 15:02:54"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 199.618 ms - -\u001b[0m","timestamp":"2026-03-09 15:02:55"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 460.759 ms - -\u001b[0m","timestamp":"2026-03-09 15:02:55"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 624.895 ms - -\u001b[0m","timestamp":"2026-03-09 15:02:56"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 1289.568 ms - -\u001b[0m","timestamp":"2026-03-09 15:09:01"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 1575.162 ms - -\u001b[0m","timestamp":"2026-03-09 15:09:01"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 634.570 ms - -\u001b[0m","timestamp":"2026-03-09 15:09:02"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 1734.604 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:36"}
+{"level":"http","message":"\u001b[0mGET /api/ref/asnaf \u001b[36m304\u001b[0m 1747.434 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:36"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kelurahan \u001b[36m304\u001b[0m 1794.132 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:36"}
+{"level":"http","message":"\u001b[0mGET /api/mustahiq?page=1&limit=10 \u001b[36m304\u001b[0m 1812.201 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:36"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 1933.251 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:36"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 398.999 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:36"}
+{"level":"http","message":"\u001b[0mGET /api/ref/asnaf \u001b[36m304\u001b[0m 448.637 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:36"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kelurahan \u001b[36m304\u001b[0m 408.231 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:36"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 414.476 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:36"}
+{"level":"http","message":"\u001b[0mGET /api/mustahiq?page=1&limit=10 \u001b[36m304\u001b[0m 532.619 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:36"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 422.023 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:37"}
+{"level":"http","message":"\u001b[0mGET /api/ref/asnaf \u001b[36m304\u001b[0m 421.346 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:37"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 420.590 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:37"}
+{"level":"http","message":"\u001b[0mGET /api/ref/asnaf \u001b[36m304\u001b[0m 436.930 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:38"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 436.795 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:38"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 456.728 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:38"}
+{"level":"http","message":"\u001b[0mGET /api/mustahiq/2 \u001b[32m200\u001b[0m 656.408 ms - 728\u001b[0m","timestamp":"2026-03-09 15:16:38"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kelurahan?kecamatan_id=10 \u001b[32m200\u001b[0m 406.897 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:39"}
+{"level":"http","message":"\u001b[0mGET /api/mustahiq/2 \u001b[36m304\u001b[0m 611.572 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:39"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kelurahan?kecamatan_id=10 \u001b[36m304\u001b[0m 789.616 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:40"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 451.331 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:45"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 449.182 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:45"}
+{"level":"http","message":"\u001b[0mGET /api/ref/asnaf \u001b[36m304\u001b[0m 452.230 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:45"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-upz \u001b[36m304\u001b[0m 394.685 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:47"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 418.028 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:47"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kelurahan \u001b[36m304\u001b[0m 423.005 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:47"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 592.891 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:47"}
+{"level":"http","message":"\u001b[0mGET /api/muzakki?page=1&limit=10 \u001b[36m304\u001b[0m 620.487 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:47"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-upz \u001b[36m304\u001b[0m 423.194 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:47"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 641.216 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:48"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kelurahan \u001b[36m304\u001b[0m 632.955 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:48"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 460.737 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:48"}
+{"level":"http","message":"\u001b[0mGET /api/muzakki?page=1&limit=10 \u001b[36m304\u001b[0m 678.347 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:48"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 396.194 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:49"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 403.929 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:49"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-upz \u001b[36m304\u001b[0m 407.249 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:49"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 421.705 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:50"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 440.845 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:50"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-upz \u001b[36m304\u001b[0m 429.806 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:50"}
+{"level":"http","message":"\u001b[0mGET /api/muzakki/1 \u001b[32m200\u001b[0m 621.308 ms - 672\u001b[0m","timestamp":"2026-03-09 15:16:50"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kelurahan?kecamatan_id=1 \u001b[32m200\u001b[0m 438.918 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:50"}
+{"level":"http","message":"\u001b[0mGET /api/muzakki/1 \u001b[36m304\u001b[0m 632.215 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:51"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kelurahan?kecamatan_id=1 \u001b[36m304\u001b[0m 403.845 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:51"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kecamatan \u001b[36m304\u001b[0m 399.868 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:55"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-upz \u001b[36m304\u001b[0m 409.869 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:55"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 411.018 ms - -\u001b[0m","timestamp":"2026-03-09 15:16:55"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 1591.599 ms - -\u001b[0m","timestamp":"2026-03-09 15:17:22"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 2013.427 ms - -\u001b[0m","timestamp":"2026-03-09 15:17:22"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 414.926 ms - -\u001b[0m","timestamp":"2026-03-09 15:17:22"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 1016.927 ms - -\u001b[0m","timestamp":"2026-03-09 15:17:23"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 1077.610 ms - -\u001b[0m","timestamp":"2026-03-09 15:17:24"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 1056.682 ms - -\u001b[0m","timestamp":"2026-03-09 15:17:25"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 430.856 ms - -\u001b[0m","timestamp":"2026-03-09 15:17:26"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 198.729 ms - -\u001b[0m","timestamp":"2026-03-09 15:17:27"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 414.843 ms - -\u001b[0m","timestamp":"2026-03-09 15:17:27"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 593.073 ms - -\u001b[0m","timestamp":"2026-03-09 15:17:28"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 1559.203 ms - -\u001b[0m","timestamp":"2026-03-09 15:20:10"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 1749.664 ms - -\u001b[0m","timestamp":"2026-03-09 15:20:10"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 616.408 ms - -\u001b[0m","timestamp":"2026-03-09 15:20:10"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 2195.173 ms - -\u001b[0m","timestamp":"2026-03-09 15:22:06"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 2508.895 ms - -\u001b[0m","timestamp":"2026-03-09 15:22:06"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 617.189 ms - -\u001b[0m","timestamp":"2026-03-09 15:22:07"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 1647.479 ms - -\u001b[0m","timestamp":"2026-03-09 15:24:23"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 1914.040 ms - -\u001b[0m","timestamp":"2026-03-09 15:24:24"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 594.232 ms - -\u001b[0m","timestamp":"2026-03-09 15:24:24"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 1571.819 ms - -\u001b[0m","timestamp":"2026-03-09 15:26:20"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 1870.469 ms - -\u001b[0m","timestamp":"2026-03-09 15:26:20"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 641.195 ms - -\u001b[0m","timestamp":"2026-03-09 15:26:21"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 1507.871 ms - -\u001b[0m","timestamp":"2026-03-09 15:26:45"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 1723.929 ms - -\u001b[0m","timestamp":"2026-03-09 15:26:45"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 637.805 ms - -\u001b[0m","timestamp":"2026-03-09 15:26:46"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 1297.834 ms - -\u001b[0m","timestamp":"2026-03-09 15:27:15"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 1629.312 ms - -\u001b[0m","timestamp":"2026-03-09 15:27:15"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 616.167 ms - -\u001b[0m","timestamp":"2026-03-09 15:27:15"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 252.698 ms - -\u001b[0m","timestamp":"2026-03-09 15:27:24"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 672.305 ms - -\u001b[0m","timestamp":"2026-03-09 15:27:24"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 576.183 ms - -\u001b[0m","timestamp":"2026-03-09 15:27:25"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 1233.181 ms - -\u001b[0m","timestamp":"2026-03-09 15:28:13"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 1508.284 ms - -\u001b[0m","timestamp":"2026-03-09 15:28:14"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 642.637 ms - -\u001b[0m","timestamp":"2026-03-09 15:28:14"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 1244.599 ms - -\u001b[0m","timestamp":"2026-03-09 15:28:33"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1 \u001b[36m304\u001b[0m 1607.582 ms - -\u001b[0m","timestamp":"2026-03-09 15:28:33"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan/1/daily-seq \u001b[36m304\u001b[0m 628.828 ms - -\u001b[0m","timestamp":"2026-03-09 15:28:34"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 1418.197 ms - -\u001b[0m","timestamp":"2026-03-09 15:29:00"}
+{"level":"http","message":"\u001b[0mGET /api/dashboard?tahun=2026 \u001b[36m304\u001b[0m 1656.444 ms - -\u001b[0m","timestamp":"2026-03-09 15:29:01"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 438.563 ms - -\u001b[0m","timestamp":"2026-03-09 15:29:01"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 2067.969 ms - -\u001b[0m","timestamp":"2026-03-09 15:29:01"}
+{"level":"http","message":"\u001b[0mGET /api/dashboard?tahun=2026 \u001b[36m304\u001b[0m 613.378 ms - -\u001b[0m","timestamp":"2026-03-09 15:29:01"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 822.800 ms - -\u001b[0m","timestamp":"2026-03-09 15:29:02"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 843.878 ms - -\u001b[0m","timestamp":"2026-03-09 15:29:03"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi/4 \u001b[36m304\u001b[0m 467.618 ms - -\u001b[0m","timestamp":"2026-03-09 15:29:03"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 840.544 ms - -\u001b[0m","timestamp":"2026-03-09 15:29:04"}
+{"level":"http","message":"\u001b[0mGET /api/auth/me \u001b[36m304\u001b[0m 191.330 ms - -\u001b[0m","timestamp":"2026-03-09 15:29:05"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi/4 \u001b[36m304\u001b[0m 480.702 ms - -\u001b[0m","timestamp":"2026-03-09 15:29:05"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi/4/daily-seq \u001b[36m304\u001b[0m 633.119 ms - -\u001b[0m","timestamp":"2026-03-09 15:29:06"}
+{"level":"info","message":"[DB] Database connected.","timestamp":"2026-03-09 15:45:44"}
+{"level":"info","message":"[SERVER] Running on port 5501 in development mode.","timestamp":"2026-03-09 15:45:44"}
+{"level":"info","message":"[DB] Database connected.","timestamp":"2026-03-09 15:46:31"}
+{"level":"info","message":"[SERVER] Running on port 5501 in development mode.","timestamp":"2026-03-09 15:46:31"}
+{"level":"info","message":"[DB] Database connected.","timestamp":"2026-03-09 15:47:10"}
+{"level":"info","message":"[SERVER] Running on port 5501 in development mode.","timestamp":"2026-03-09 15:47:10"}
+{"level":"info","message":"[DB] Database connected.","timestamp":"2026-03-09 15:47:14"}
+{"level":"info","message":"[SERVER] Running on port 5501 in development mode.","timestamp":"2026-03-09 15:47:14"}
+{"level":"info","message":"[DB] Database connected.","timestamp":"2026-03-09 15:48:05"}
+{"level":"info","message":"[SERVER] Running on port 5501 in development mode.","timestamp":"2026-03-09 15:48:05"}
+{"level":"info","message":"[DB] Database connected.","timestamp":"2026-03-09 15:49:10"}
+{"level":"info","message":"[SERVER] Running on port 5501 in development mode.","timestamp":"2026-03-09 15:49:10"}
+{"level":"info","message":"[DB] Database connected.","timestamp":"2026-03-09 15:49:34"}
+{"level":"info","message":"[SERVER] Running on port 5501 in development mode.","timestamp":"2026-03-09 15:49:34"}
+{"level":"info","message":"[DB] Database connected.","timestamp":"2026-03-09 15:50:23"}
+{"level":"info","message":"[SERVER] Running on port 5501 in development mode.","timestamp":"2026-03-09 15:50:23"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 1587.448 ms - -\u001b[0m","timestamp":"2026-03-09 15:51:41"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 1711.034 ms - -\u001b[0m","timestamp":"2026-03-09 15:51:42"}
+{"level":"http","message":"\u001b[0mGET /api/dashboard?tahun=2026 \u001b[36m304\u001b[0m 1784.855 ms - -\u001b[0m","timestamp":"2026-03-09 15:51:42"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 569.763 ms - -\u001b[0m","timestamp":"2026-03-09 15:51:42"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 1576.158 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:42"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 1739.853 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:42"}
+{"level":"http","message":"\u001b[0mGET /api/ref/jenis-muzakki \u001b[36m304\u001b[0m 516.577 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:42"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 685.250 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:42"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 371.497 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:43"}
+{"level":"http","message":"\u001b[0mGET /api/penerimaan?page=1&limit=10 \u001b[36m304\u001b[0m 352.502 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:43"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 359.418 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:44"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 365.209 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:44"}
+{"level":"http","message":"\u001b[0mGET /api/dashboard?tahun=2026 \u001b[36m304\u001b[0m 704.476 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:45"}
+{"level":"http","message":"\u001b[0mGET /api/ref/kategori-mustahiq \u001b[36m304\u001b[0m 344.324 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:45"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 514.754 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:45"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 349.336 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:45"}
+{"level":"http","message":"\u001b[0mGET /api/dashboard?tahun=2026 \u001b[36m304\u001b[0m 523.190 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:45"}
+{"level":"http","message":"\u001b[0mGET /api/distribusi?page=1&limit=10&dateField=tanggal \u001b[36m304\u001b[0m 365.759 ms - -\u001b[0m","timestamp":"2026-03-09 15:53:46"}

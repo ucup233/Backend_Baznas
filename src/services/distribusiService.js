@@ -81,26 +81,27 @@ const getAll = async (query) => {
   }
 
 
-  const { count, rows } = await Distribusi.findAndCountAll({
-    where,
-    limit: parseInt(limit),
-    offset: parseInt(offset),
-    order: [['tanggal', 'DESC'], ['id', 'DESC']],
-    include: [
-      { model: Mustahiq, attributes: ['id', 'nama', 'nrm'] },
-      { model: NamaProgram, attributes: ['id', 'nama'] },
-      { model: SubProgram, attributes: ['id', 'nama'] },
-      { model: ProgramKegiatan, attributes: ['id', 'nama'] },
-      { model: Asnaf, as: 'asnaf', attributes: ['id', 'nama'] },
-      { model: NamaEntitas, attributes: ['id', 'nama'] },
-      { model: KategoriMustahiq, attributes: ['id', 'nama'] }
-    ]
-  });
+  const [searchResult, total_jumlah, total_permohonan] = await Promise.all([
+    Distribusi.findAndCountAll({
+      where,
+      limit: parseInt(limit),
+      offset: parseInt(offset),
+      order: [['tanggal', 'DESC'], ['id', 'DESC']],
+      include: [
+        { model: Mustahiq, attributes: ['id', 'nama', 'nrm'] },
+        { model: NamaProgram, attributes: ['id', 'nama'] },
+        { model: SubProgram, attributes: ['id', 'nama'] },
+        { model: ProgramKegiatan, attributes: ['id', 'nama'] },
+        { model: Asnaf, as: 'asnaf', attributes: ['id', 'nama'] },
+        { model: NamaEntitas, attributes: ['id', 'nama'] },
+        { model: KategoriMustahiq, attributes: ['id', 'nama'] }
+      ]
+    }),
+    Distribusi.sum('jumlah', { where: { ...where, status: 'diterima' } }).then(v => v || 0),
+    Distribusi.sum('jumlah_permohonan', { where }).then(v => v || 0)
+  ]);
 
-  // Calculate total jumlah for current filter (only diterima)
-  const whereForTotal = { ...where, status: 'diterima' };
-  const total_jumlah = await Distribusi.sum('jumlah', { where: whereForTotal }) || 0;
-  const total_permohonan = await Distribusi.sum('jumlah_permohonan', { where }) || 0;
+  const { count, rows } = searchResult;
 
   return {
     rows,

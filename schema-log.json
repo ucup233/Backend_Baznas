@@ -1,0 +1,260 @@
+{
+  "columns": [
+    {
+      "Field": "id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": null,
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "muzakki_id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "npwz",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "nama_muzakki",
+      "Type": "varchar(150)",
+      "Null": "NO",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "nik_muzakki",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "no_hp_muzakki",
+      "Type": "varchar(14)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "jenis_muzakki_id",
+      "Type": "int",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "jenis_upz_id",
+      "Type": "int",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "tanggal",
+      "Type": "date",
+      "Null": "NO",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "bulan",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "tahun",
+      "Type": "int",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "via_id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "metode_bayar_id",
+      "Type": "int",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "no_rekening",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "zis_id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "jenis_zis_id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "jumlah",
+      "Type": "decimal(15,2)",
+      "Null": "NO",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "persentase_amil_id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "dana_amil",
+      "Type": "decimal(15,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "dana_bersih",
+      "Type": "decimal(15,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "keterangan",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "rekomendasi_upz",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "created_by",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "created_at",
+      "Type": "datetime",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": "DEFAULT_GENERATED"
+    },
+    {
+      "Field": "updated_at",
+      "Type": "datetime",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+    }
+  ],
+  "penerimaan_details": [
+    "id",
+    "muzakki_id",
+    "npwz",
+    "nama_muzakki",
+    "nik_muzakki",
+    "no_hp_muzakki",
+    "jenis_muzakki_id",
+    "jenis_upz_id",
+    "tanggal",
+    "bulan",
+    "tahun",
+    "via_id",
+    "metode_bayar_id",
+    "no_rekening",
+    "zis_id",
+    "jenis_zis_id",
+    "jumlah",
+    "persentase_amil_id",
+    "dana_amil",
+    "dana_bersih",
+    "keterangan",
+    "rekomendasi_upz",
+    "created_by",
+    "created_at",
+    "updated_at"
+  ]
+}
+
+Migrations:
+[
+  "20250223000000-create-ref-tables.js",
+  "20250223000001-create-users.js",
+  "20250223000002-create-muzakki.js",
+  "20250223000003-create-mustahiq.js",
+  "20250223000004-create-penerimaan.js",
+  "20250223000005-create-distribusi.js",
+  "20250223000007-create-migration-log.js",
+  "20250223000008-create-audit-log.js",
+  "20250223000009-create-triggers.js",
+  "20260223000010-remove-registered-date.js",
+  "20260226000011-add-new-columns.js",
+  "20260226000012-create-sp-dashboard-overview.js",
+  "20260226000013-create-sp-receipt-stats.js",
+  "20260226075216-update-sp-receipt-stats-with-summary.js",
+  "20260227132800-make-distribusi-tanggal-nullable.js",
+  "20260227135000-update-sp-dashboard-overview-total.js",
+  "20260301000000-fix-triggers-and-sync-data.js",
+  "20260301000001-create-sp-distribusi-stats.js",
+  "20260302000000-fix-asnaf-and-roles.js",
+  "20260302000002-rename-via-distribusi-to-nama-entitas.js",
+  "20260304000000-update-muzakki-mustahiq-attributes.js",
+  "20260304000001-add-distribusi-disetujui-field.js",
+  "20260304000002-update-sp-dashboard-overview-with-pending.js",
+  "20260304000003-add-dana-amil-to-penerimaan.js",
+  "20260304120000-update-sp-stats-with-extras.js"
+]

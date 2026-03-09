@@ -57,25 +57,27 @@ const getAll = async (query) => {
     ];
   }
 
-  const { rows, count } = await Penerimaan.findAndCountAll({
-    where,
-    limit: Number(limit),
-    offset: Number(offset),
-    order: [['tanggal', 'DESC'], ['created_at', 'DESC']],
-    include: [
-      { model: Muzakki, attributes: ['id', 'nama', 'npwz'] },
-      { model: ViaPenerimaan, attributes: ['id', 'nama'], as: 'via' },
-      { model: MetodeBayar, attributes: ['id', 'nama'], as: 'metode_bayar' },
-      { model: Zis, attributes: ['id', 'nama'], as: 'zis' },
-      { model: JenisZis, attributes: ['id', 'nama'], as: 'jenis_zis' },
-      { model: PersentaseAmil, attributes: ['id', 'label', 'nilai'], as: 'persentase_amil' }
-    ]
-  });
+  const [searchResult, total_jumlah, total_dana_bersih, total_dana_amil] = await Promise.all([
+    Penerimaan.findAndCountAll({
+      where,
+      limit: Number(limit),
+      offset: Number(offset),
+      order: [['tanggal', 'DESC'], ['created_at', 'DESC']],
+      include: [
+        { model: Muzakki, attributes: ['id', 'nama', 'npwz'] },
+        { model: ViaPenerimaan, attributes: ['id', 'nama'], as: 'via' },
+        { model: MetodeBayar, attributes: ['id', 'nama'], as: 'metode_bayar' },
+        { model: Zis, attributes: ['id', 'nama'], as: 'zis' },
+        { model: JenisZis, attributes: ['id', 'nama'], as: 'jenis_zis' },
+        { model: PersentaseAmil, attributes: ['id', 'label', 'nilai'], as: 'persentase_amil' }
+      ]
+    }),
+    Penerimaan.sum('jumlah', { where }).then(v => v || 0),
+    Penerimaan.sum('dana_bersih', { where }).then(v => v || 0),
+    Penerimaan.sum('dana_amil', { where }).then(v => v || 0)
+  ]);
 
-  // Aggregate totals across all matching rows (not just current page)
-  const total_jumlah = await Penerimaan.sum('jumlah', { where }) || 0;
-  const total_dana_bersih = await Penerimaan.sum('dana_bersih', { where }) || 0;
-  const total_dana_amil = await Penerimaan.sum('dana_amil', { where }) || 0;
+  const { rows, count } = searchResult;
 
   return {
     data: rows,
